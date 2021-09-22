@@ -4,6 +4,7 @@
 
 library(tidyverse)
 library(electorAr)
+library(here)
 
 
 elecciones63 <- show_available_elections(source = "results") %>% 
@@ -14,4 +15,4 @@ elecciones63 <- show_available_elections(source = "results") %>%
 eleccion2011 <-   get_election_results("arg",   "presi",    "gral",   2011)
 
 
-write_csv(eleccion2011, "data/elec2011.csv")
+
