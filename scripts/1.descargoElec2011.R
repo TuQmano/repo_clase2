@@ -14,5 +14,5 @@ elecciones63 <- show_available_elections(source = "results") %>%
 
 eleccion2011 <-   get_election_results("arg",   "presi",    "gral",   2011)
 
-
-
+eleccion2011 %>% 
+ write_csv("data/elec2011.csv")
